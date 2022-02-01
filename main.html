@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <header class="header">
+      <div class="headerItems">
+        <li id="nameMain"> Name: </li>
+        <li id="classMain"> Class: </li>
+        <li id="raceMain"> Race: </li>
+        <li id="scoresMain">Abilities Score:</li>
+      </div>
+    </header>
+
+    <div class="mainName1">
+      <h2>Select a Name for your Character:</h2>
+      <input type="text" id="inputName">
+      <button id="bttn1" class="accept">Accept</button>
+    </div>
+
+    <div class="mainStats1">
+<h2>Select your Stats Generator:</h2>
+
+    <div class="mainStats">
+<div class="statsBlock">
+  <li id="e1" class="titleelection"><b>Standard Array:</b></li>
+            <p>This option gives you a predetermined set of numbers for your stats.</p>
+            <button type="button" id="button1" class="button">Standard Array</button>
+            <br>
+            <br>
+            <li id="statFiller2"  class="statFiller">
+            </li>        
+</div>
+
+<div class="statsBlock">
+  <li id="e2" class="titleelection"><b>Tirar Dados:</b></li>
+            <p>This option takes 4 dice of 6 faces, throws them, and sustracts the lesser number..</p>
+            <p>(It gives you two options to choose)</p>
+            <button type="button" id="button2" class="button">Throw Dice</button>
+            <br>
+            <br>
+            <li id="statFiller0"  class="statFiller">
+            </li>   
+</div>
+
+<div class="statsBlock">
+  <li id="e3" class="titleelection"><b>Elegir Numeros:</b></li>
+            <p>If you already have your stats, you can fill them here.</p>
+            <button type="button" id="button3" class="button">Choose Numbers</button>
+            <br>
+            <br>
+            <li id="statFiller"  class="statFiller">
+            </li>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="mainClass1">
+<h2>Select a Class:</h2>
+    <div class="mainClass">
+    <div class="flip-card1">
+      <div class="flip-card-inner1">
+        <div class="flip-card-front1">
+          <img src="./Images/Barbarian.png" alt="Avatar" style="width:200px;height:200px;">
+        </div>
+        <div class="flip-card-back1">
+          <h1>Barbarian</h1>
+          <p>For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.</p>
+          <button id="btnC1" class="choose">Choose</button>
+          
+        </div>
+      </div>
+  </div>
+
+  <div class="flip-card1">
+    <div class="flip-card-inner1">
+      <div class="flip-card-front1">
+        <img src="./Images/Bard.png" alt="Avatar" style="width:200px;height:200px;">
+      </div>
+      <div class="flip-card-back1">
+                <h1>Bard</h1>
+                <p>Whether scholar, skald, or scoundrel, a bard weaves magic through words and music to inspire allies, demoralize foes, manipulate minds, create illusions, and even heal wounds. The bard is a master of song, speech, and the magic they contain.</p>
+                <button id="btnC2" class="choose">Choose</button>
+                
+              </div>
+            </div>
+        </div>
+        
+        <div class="flip-card1">
+          <div class="flip-card-inner1">
+            <div class="flip-card-front1">
+              <img src="./Images/Cleric.png" alt="Avatar" style="width:200px;height:200px;">
+            </div>
+            <div class="flip-card-back1">
+                <h1>Cleric</h1>
+                <p>Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.</p>
+                <button id="btnC3" class="choose">Choose</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card1">
+          <div class="flip-card-inner1">
+            <div class="flip-card-front1">
+              <img src="./Images/Druid.png" alt="Avatar" style="width:200px;height:200px;">
+            </div>
+            <div class="flip-card-back1">
+                <h1>Druid</h1>
+                <p>Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature, but see themselves as extensions of nature's indomitable will.</p>
+                <button id="btnC4" class="choose">Choose</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card1">
+          <div class="flip-card-inner1">
+            <div class="flip-card-front1">
+              <img src="./Images/Fighter.png" alt="Avatar" style="width:200px;height:200px;">
+            </div>
+            <div class="flip-card-back1">
+              <h1>Fighter</h1>
+              <p>Fighters share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. They are well acquainted with death, both meting it out and staring it defiantly in the face.</p>
+              <button id="btnC5" class="choose">Choose</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="flip-card1">
+        <div class="flip-card-inner1">
+          <div class="flip-card-front1">
+            <img src="./Images/Monk.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back1">
+            <h1>Monk</h1>
+            <p>Monks are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a monk does.</p>
+            <button id="btnC6" class="choose">Choose</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="flip-card1">
+      <div class="flip-card-inner1">
+        <div class="flip-card-front1">
+          <img src="./Images/Paladin.png" alt="Avatar" style="width:200px;height:200px;">
+        </div>
+        <div class="flip-card-back1">
+          <h1>Paladin</h1>
+          <p>Whether sworn before a god's altar and the witness of a priest, in a sacred glade before nature spirits and fey beings, or in a moment of desperation and grief with the dead as the only witness, a paladin's oath is a powerful bond.</p>
+          <button id="btnC7" class="choose">Choose</button>
+        </div>
+      </div>
+  </div>
+
+  <div class="flip-card1">
+    <div class="flip-card-inner1">
+      <div class="flip-card-front1">
+        <img src="./Images/Ranger.png" alt="Avatar" style="width:200px;height:200px;">
+      </div>
+      <div class="flip-card-back1">
+        <h1>Ranger</h1>
+        <p>Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.</p>
+        <button id="btnC8" class="choose">Choose</button>
+      </div>
+    </div>
+</div>
+
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="./Images/Rogue.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back1">
+      <h1>Rogue</h1>
+      <p>Rogues rely on skill, stealth, and their foes' vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.</p>
+      <button  id="btnC9" class="choose">Choose</button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="./Images/Sorcerer.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back1">
+      <h1>Sorcerer</h1>
+      <p>Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. No one chooses sorcery; the power chooses the sorcerer.</p>
+      <button id="btnC10" class="choose">Choose</button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="./Images/Warlock.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back1">
+      <h1>Warlock</h1>
+      <p>Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of supernatural power, warlocks unlock magical effects both subtle and spectacular.</p>
+      <button id="btnC11" class="choose">Choose</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="./Images/Wizard.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back1">
+      <h1>Wizard</h1>
+      <p>Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, brute-force mind control, and much more.</p>
+      <button id="btnC12" class="choose">Choose</button>
+    </div>
+  </div>
+</div>
+
+</div>
+<button id="accept1" class="accept">Accept</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="mainRace1">
+  <h2>Select a Race:</h2>
+
+<div class="mainRace">
+  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Images/Dragonborn.png" alt="Avatar" style="width:120px;height:450px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Dragonborn</h1>
+          <p>The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids.</p>
+          <button id="btnR1" class="choose">Choose</button>
+          
+        </div>
+      </div>
+  </div>
+  
+  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Images/Dwarf.png" alt="Avatar" style="width:120px;height:450px;">        </div>
+        <div class="flip-card-back">
+          <h1>Dwarf</h1>
+          <p>Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs. these common threads unite all dwarves.</p>
+          <button id="btnR2" class="choose">Choose</button>
+        </div>
+      </div>
+  </div>
+
+<div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Images/Elf.png" alt="Avatar" style="width:120px;height:450px;">        </div>
+        <div class="flip-card-back">
+          <h1>Elf</h1>
+          <p>Elves are a magical people of otherworldly grace, living in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry.</p>
+          <button id="btnR3" class="choose">Choose</button>
+        </div>
+      </div>
+  </div>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="./Images/Gnome.png" alt="Avatar" style="width:120px;height:450px;">      </div>
+      <div class="flip-card-back">
+        <h1>Gnome</h1>
+        <p> A crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.</p>
+        <button id="btnR4" class="choose">Choose</button>
+      </div>
+    </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./Images/HalfElf.png" alt="Avatar" style="width:120px;height:450px;">    </div>
+    <div class="flip-card-back">
+      <h1>Half Elf</h1>
+      <p>Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves.</p>
+      <button id="btnR5" class="choose">Choose</button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="./Images/Human.png" alt="Avatar" style="width:120px;height:450px;">  </div>
+  <div class="flip-card-back">
+    <h1>Human</h1>
+    <p>Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that's why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.</p>
+    <button id="btnR6" class="choose">Choose</button>
+  </div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img src="./Images/HalfOrc.png" alt="Avatar" style="width:120px;height:450px;"></div>
+<div class="flip-card-back">
+  <h1>Half Orc</h1>
+  <p>Some half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races.</p>
+  <button id="btnR7" class="choose">Choose</button>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img src="./Images/Hafling.png" alt="Avatar" style="width:120px;height:450px;"></div>
+<div class="flip-card-back">
+<h1>Hafling</h1>
+<p>Halflings work readily with others, and they are loyal to their friends, whether halfling or otherwise. They can display remarkable ferocity when their friends, families, or communities are threatened.</p>
+<button id="btnR8" class="choose">Choose</button>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img src="./Images/Tiefling.png" alt="Avatar" style="width:120px;height:450px;"></div>
+<div class="flip-card-back">
+<h1>Tiefling</h1>
+<p>Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children's children will always be held accountable.</p>
+<button id="btnR9" class="choose">Choose</button>
+</div>
+</div>
+</div>
+
+</div>
+<button id="accept2" class="accept">Accept</button>
+</div>
+
+
+
+
+
+<div class="mainSkills1">
+<h2>Select 2 Skills:</h2>
+<div class="mainSkills">
+<input type="checkbox" class="skill" id="skillAcrobatics">  <label>Acrobatics </label> 
+<input type="checkbox" class="skill" id="skillAnimalHandling"> <label> Animal Handling </label> 
+<input type="checkbox" class="skill" id="skillArcana"> <label>Arcana</label> 
+<input type="checkbox" class="skill" id="skillAthletics"> <label> Athletics</label> 
+<input type="checkbox" class="skill" id="skillDeception"> <label> Deception</label> 
+<input type="checkbox" class="skill" id="skillHistory"> <label>History </label>
+<input type="checkbox" class="skill" id="skillInsight"> <label>Insight</label> 
+<input type="checkbox" class="skill" id="skillIntimidation"> <label>Intimidation</label> 
+<input type="checkbox" class="skill" id="skillInvestigation"> <label>Investigation</label> 
+<input type="checkbox" class="skill" id="skillMedicine"> <label>Medicine</label> 
+<input type="checkbox" class="skill" id="skillNature"> <label>Nature</label> 
+<input type="checkbox" class="skill" id="skillPerception"> <label>Perception</label> 
+<input type="checkbox" class="skill" id="skillPerformance"> <label>Performance</label> 
+<input type="checkbox" class="skill" id="skillPersuasion"> <label>Persuasion</label> 
+<input type="checkbox" class="skill" id="skillReligion"> <label>Religion</label>
+<input type="checkbox" class="skill" id="skillSleightofHand"> <label>Sleight of Hand </label> 
+<input type="checkbox" class="skill" id="skillStealth"> <label>Stealth </label>
+<input type="checkbox" class="skill" id="skillSurvival"> <label>Survival</label>
+
+ </div>
+<button class="accept">Accept</button>
+</div>
+
+
+
+        
+<div class="mainLanguages1">
+<h2>Select 2 Lenguages:</h2>
+
+<div class="mainLanguages">
+<input type="checkbox" class="Language" id="LanguageCommon"> <label>Common</label> 
+<input type="checkbox" class="Language" id="LanguageElvish"> <label>Elvish</label> 
+<input type="checkbox" class="Language" id="LanguageDwarvish"> <label>Dwarvish</label> 
+<input type="checkbox" class="Language" id="LanguageGiant"> <label>Giant</label> 
+<input type="checkbox" class="Language" id="LanguageGnomish"> <label>Gnomish</label> 
+<input type="checkbox" class="Language" id="LanguageInfernal"> <label>Infernal </label>
+<input type="checkbox" class="Language" id="LanguageCelestial"> <label>Celestial</label> 
+<input type="checkbox" class="Language" id="LanguageSylvan"> <label>Sylvan</label> 
+<input type="checkbox" class="Language" id="LanguageGoblin"> <label>Goblin</label> 
+<input type="checkbox" class="Language" id="LanguageHafling"> <label>Hafling</label> 
+<input type="checkbox" class="Language" id="LanguageOrc"> <label>Orc</label> 
+<input type="checkbox" class="Language" id="LanguageDraconic"> <label>Draconic</label> 
+<input type="checkbox" class="Language" id="LanguagePrimordial"> <label>Primordial</label> 
+<input type="checkbox" class="Language" id="LanguageUndercommon"> <label>Undercommon</label> 
+<input type="checkbox" class="Language" id="LanguageDeepSpeech"> <label>Deep Speech</label>
+<input type="checkbox" class="Language" id="LanguageAbyssal"> <label>Abyssal</label>
+</div>
+
+<button class="accept">Accept</button>
+
+</div>
+
+
+<div class="mainFinal1">
+<button class="trigger" id="trigger">Finish Character Creation</button>
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="results" class="results">
+          <p>Your Character:</p>
+          <br>
+          <ul>
+            <li id="name1">
+              Name: <br> none
+          </li>
+              <li id="clase1">
+                  Class: <br> none
+              </li>
+              <br>
+              <li id="raza1">
+                  Race: <br> none
+              </li>
+              <br>
+          </ul>
+      </div>
+    </div>
+</div>
+</div>
+
+</body>
+<script src="main.js"></script>
+    <script type="text/javascript" src="/dataLocal.json"></script>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
